@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Teste1</title>
+</head>
+<body>
+
+      <div class="superinfo-bg">
+    <div class="superinfo">
+      <div class="Br-pesquisa">
+            <input type="button" value="Barra de Pesquisa ">
+    </div>
+
+      <div class="login">
+        <a href="#">Login </a>
+        <a href="#">Cadastro</a>
+        <a href="carrinho.html">Carrinho </a>
+        <a href="#">Favoritos </a>
+        <a href="tel:+244938811698">+244 938 811 698</a>
+      </div>     
+    </div>
+    </div>
+<header class="menu-bg">
+    <div class="menu">
+        <div class="menu-logo">
+            <a href="#"><h1>SHOP EDUSTYLE</h1></a>
+        </div>
+
+             <!-- Navegação Desktop -->
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link active" onclick="showSection('inicio')">
+                        <i class="fas fa-home"></i> Início
+                    </a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#" class="nav-link" onclick="showSection('cursos')">
+                        <i class="fas fa-chalkboard-teacher"></i> Cursos
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link" onclick="showSection('professores')">
+                        <i class="fas fa-chalkboard-teacher"></i> Professores
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link" onclick="showSection('biblioteca')">
+                        <i class="fas fa-book-open"></i> Galeria
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link" onclick="showSection('contato')">
+                        <i class="fas fa-envelope"></i> Contato
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        <i class="fas fa-book"></i> Sobre <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" onclick="showSection('ensino-medio')">
+                            <i class="fas fa-school"></i> Bibliotecas
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="showSection('cursos-tecnicos')">
+                            <i class="fas fa-laptop-code"></i> Eventos
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="showSection('pre-vestibular')">
+                            <i class="fas fa-university"></i> Datas
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="showSection('idiomas')">
+                            <i class="fas fa-language"></i> Criadores
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobileMenu">
+        <div class="nav-item">
+            <a href="#" class="nav-link" onclick="showSection('inicio'); toggleMobileMenu()">
+                <i class="fas fa-home"></i> Início
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link" onclick="showSection('sobre'); toggleMobileMenu()">
+                <i class="fas fa-envelope"></i> Cursos
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link" onclick="showSection('professores'); toggleMobileMenu()">
+                <i class="fas fa-chalkboard-teacher"></i> Professores
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link" onclick="showSection('galeria'); toggleMobileMenu()">
+                <i class="fas fa-calendar-alt"></i> Galeria
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link" onclick="showSection('contato'); toggleMobileMenu()">
+                <i class="fas fa-book-open"></i> Contato
+            </a>
+        </div>
+        <div class="nav-item" onclick="toggleMobileDropdown(this)">
+            <a href="#" class="nav-link">
+                <i class="fas fa-book"></i> Sobre <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" onclick="showSection('bibliotecas'); toggleMobileMenu()">
+                    <i class="fas fa-school"></i> Biblioteca
+                </a>
+                <a href="#" class="dropdown-item" onclick="showSection('eventos'); toggleMobileMenu()">
+                    <i class="fas fa-laptop-code"></i> Eventos
+                </a>
+                <a href="#" class="dropdown-item" onclick="showSection('datas'); toggleMobileMenu()">
+                    <i class="fas fa-university"></i> Datas
+                </a>
+                <a href="#" class="dropdown-item" onclick="showSection('Criadores'); toggleMobileMenu()">
+                    <i class="fas fa-language"></i> Criadores
+                </a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+
+      <!--Fim-->
+
+  </header>
+   <marquee ><h2 class="intruducao" >Bem-vindo à nossa Loja!</h2></marquee>
+
+   <section class="sobre" id="sobre">
+    <div class="sobre-info">
+        <h1>Sobre</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, in aliquid. Odit officia dolorum quaerat tempora, eaque sed quia exercitationem vitae harum illum, tempore voluptates autem voluptate nobis adipisci nostrum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illo consequuntur aperiam rerum possimus pariatur obcaecati, dolores nemo officia harum ab temporibus quam quae modi ex magni, a quasi vero!</p>
+    </div>
+    <div class="sobre-img">
+        <img src="Img/A1 Model.jfif" alt="Photo">
+    </div>
+
+   </section>
+   <section class="sobre-produtos" id="Produtos">
+        <h1>Produtos em Destaque</h1>
+    <div class="Produtos-container">
+     <div class="Produtos-item  barca">
+        <h2>Barça</h2>
+        <img src="Img/barca1.gif" alt="Produto 1">
+     </div>  
+           <div class="Produtos-item  barca">
+        <h2>Barça</h2>
+        <img src="Img/barca1.gif" alt="Produto 2">
+     </div> 
+      <div class="Produtos-item  barca">
+        <h2>Barça</h2>
+        <img src="Img/barca1.gif" alt="Produto 3">
+     </div> 
+    </div>
+   </section>
+   <section class="preco" id="Carinha">
+    <div class="preco-item">
+        <h2>Barça</h2>
+        <span><sup>kz</sup> 50.000</span>
+        <ul>
+            <li>Equipamento de boa qualidade</li>
+            <li>Core Vermelho</li>
+            <li>Azul</li>
+            <li>Preto</li>
+        </ul>
+          <a href="#">Comprar</a>
+    </div>
+      <div class="preco-item">
+        <h2>Barça</h2>
+        <span><sup>kz</sup> 30.000</span>
+        <ul>
+            <li>Equipamento de boa qualidade</li>
+            <li>Core Vermelho</li>
+            <li>Azul</li>
+            <li>Preto</li>
+        </ul>
+          <a href="#">Comprar</a>
+    </div>
+      <div class="preco-item">
+        <h2>Barça</h2>
+        <span><sup>kz</sup> 1000.000</span>
+        <ul>
+            <li>Equipamento de boa qualidade</li>
+            <li>Core Vermelho</li>
+            <li>Azul</li>
+            <li>Preto</li>
+            <li>Download dos Itens</li>
+            <li>Compra Exclusica</li>
+            <li>Planos Limitado</li>
+        </ul>
+          <a href="#">Comprar</a>
+    </div>
+   </section>
+
+   <section class="qualidade" id="qualidade">
+    <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+        <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+        <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+        <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+        <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+        <div class="qualidade-item">
+        <h1>Qualidade do Produtos</h1>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+        <p>Lorem ipsum dolor sit amet  elit. Optio suscipit nulla animi debitis? Hic nisi, enim, pariatur eveniet vitae, ipsum a quos</p>
+    </div>
+   </section>
+   <section class="Shop-Eazy">
+    <div class="ShopEazy-info">
+        <h1>Shop-EduStyle</h1>
+        <p>Assine e fique por dentro das novidades não perca mais tempo!</p>
+    </div>
+    <form class="Eazy-form"> 
+        <input type="text" placeholder="Seu e-mail" >
+        <button type="submit">Assinar</button>
+    </form>
+   </section>
+<footer class="footer">
+     <p> &copy; 2026 Loja Virtual. Todos os direitos reservados. <a href="#">Ndoma Álvaro</a> aluno do 3 ano.</p>
+</footer>
+
+<script>
+
+            container.innerHTML = content;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Fechar menu mobile se aberto
+            if (document.getElementById('mobileMenu').classList.contains('active')) {
+                toggleMobileMenu();
+            }
+
+
+       
+
+        
+        // ==================== UTILITÁRIOS ====================
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            const btn = document.querySelector('.mobile-menu-btn');
+            
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        function toggleMobileDropdown(element) {
+            element.classList.toggle('open');
+        }
+
+        function toggleDropdown(element) {
+            // Apenas para evitar comportamento padrão
+            return false;
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            showSection('inicio');
+        }
+
+        function showToast(message) {
+            // Criar elemento toast
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--primary);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 9999;
+                animation: slideIn 0.3s;
+            `;
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'slideOut 0.3s';
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 3000);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Inicializar com a página inicial
+        showSection('inicio');
+    </script>
+
+    <style>
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+    </style>
+
+</body>
+</html>

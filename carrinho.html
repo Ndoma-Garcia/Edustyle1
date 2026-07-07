@@ -1,0 +1,40 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Loja Virtual</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Shop Easy</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">🛒 Carrinho</a>
+        </nav>
+    </header>
+
+    <!-- CARRINHO -->
+    <section class="carrinho-section">
+        <h2>O Meu Carrinho</h2>
+
+        <div id="lista-carrinho"></div>
+
+        <div class="carrinho-total">
+            <h3>Total: <span id="total">Kz 0</span></h3>
+            <button class="btn-comprar" onclick="finalizarCompra()">Finalizar Compra</button>
+            <button class="btn-limpar" onclick="limparCarrinho()">Limpar Carrinho</button>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Loja Virtual. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
